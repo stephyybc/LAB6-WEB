@@ -17,4 +17,15 @@ function TodoAdd(stuff){
     
     var list = document.getElementById("TodoList");
 
+    var div = document.createElement("div");
+    var checkbox = document.createElement("checkbox");
+    var text = document.createElement("text");//para agregar texto
+
+    text.textContent = to_do;
+
+    div.appendChild(text);
+    list.appendChild(div);
+
+
+
 }
